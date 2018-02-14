@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<servlet-name>CreateServlet</servlet-name>
+		<servlet-class>g.CreateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CreateServlet</servlet-name>
+		<url-pattern>/CreateServlet</url-pattern>
+	</servlet-mapping>
+<!-- 	<servlet>
+		<servlet-name>VerifyLogin1</servlet-name>
+		<servlet-class>g.VerifyLogin1</servlet-class>
+	</servlet>
+	<servlet>
+
+		<servlet-name>verifyLogin1</servlet-name>
+		<servlet-class>g.verifyLogin1</servlet-class>
+	</servlet> -->
+
+	<listener>
+		<listener-class>g.MyListener</listener-class>
+	</listener>
+</web-app>
